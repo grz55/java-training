@@ -5,55 +5,10 @@ import java.util.*;
 
 public class CountingValleysAlgorithm {
 
-    // Complete the countingValleys function below.
-    /*static int countingValleys(int n, String s) {
-
-        int elevation = 0;
-        int valleys = 0;
-        boolean fullValley;
-        char[] steps = s.toCharArray();
-
-        for(int i=0;i<n;i++){
-            if(steps[i] == 'U'){
-                elevation++;
-            }
-            if(steps[i] == 'D'){
-                elevation--;
-            }
-            if(elevation<0){
-                fullValley = false;
-                for(int j=(i+1);j<n;j++){
-                    if(steps[j] == 'U'){
-                        elevation++;
-                    }
-                    if(steps[j] == 'D'){
-                        elevation--;
-                    }
-                    if(elevation>=0){
-                        valleys++;
-                        fullValley = true;
-                    }
-                    i=j;
-                    System.out.print(elevation + " ");
-                    if(fullValley == true){
-                        break;
-                    }
-                }
-
-            }
-            System.out.print(elevation + " ");
-        }
-        System.out.println();
-
-        return valleys;
-    }*/
-
-
     static int countingValleys(int n, String s) {
 
         int elevation = 0;
         int valleys = 0;
-        boolean fullValley;
 
         for (int i = 0; i < n; i++) {
             if (s.charAt(i) == 'U') {
@@ -69,7 +24,6 @@ public class CountingValleysAlgorithm {
         }
         return valleys;
     }
-
 
     private static final Scanner scanner = new Scanner(System.in);
 
