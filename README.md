@@ -5,3 +5,6 @@ https://www.w3schools.com/java/default.asp
 
 All pages from this tutorial done
 Basics, OOP, Files, Collections
+
+Algorithms solved
+Examples from HackerRank and LeetCode
