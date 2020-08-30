@@ -5,6 +5,13 @@ import java.util.*;
 
 public class CountingValleysAlgorithm {
 
+    // (HACKERRANK.COM)
+    // Finding how many valleys exist in the string
+    // Valleys are sequences of negative numbers
+    // Algorithm counts number of negative sequences
+    // For given input UDDDUUUDDDUUU --> UD(DDUU)UD(DDUU)U <-- valleys in brackets
+    // There are 2 valleys
+
     static int countingValleys(int n, String s) {
 
         int elevation = 0;
