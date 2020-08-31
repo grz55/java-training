@@ -30,7 +30,7 @@ class ListNode {
     }
 }
 
-class Solution {
+class AddingNumbersListNodeAlgorithm {
 
     public static int addTwoNumbers(ListNode l1, ListNode l2) {
 

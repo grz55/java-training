@@ -9,6 +9,8 @@ public class SimpleTraining {
         byte b = 127;           //max value for byte
         short s = 32767;        //max value for short
 
+        System.out.println(Long.MAX_VALUE);
+
         float f = 10.01f;
         double d = 10.02;
 
