@@ -23,5 +23,7 @@ class PalindromeNumberAlgorithm {
         System.out.println(isPalindrome(1));
         System.out.println(isPalindrome(1112111));
         System.out.println(isPalindrome(-12));
+
+
     }
 }
