@@ -10,7 +10,31 @@ public class CommonSubstring {
     // A substring may be as small as one character.
 
     static String twoStrings(String s1, String s2) {
-        return "YES";
+        String shorterString;
+        String longerString;
+        int shorterLength;
+        int longerLength;
+
+        if (s1.length() > s2.length()) {
+            shorterLength = s2.length();
+            shorterString = s2;
+            longerString = s1;
+            longerLength = s1.length();
+        } else {
+            shorterLength = s1.length();
+            shorterString = s1;
+            longerString = s2;
+            longerLength = s2.length();
+        }
+
+        for (int i = 0; i < shorterLength; i++) {
+            for (int j = 0; j < longerLength; j++) {
+                if (shorterString.charAt(i) == longerString.charAt(j)) {
+                    return "YES";
+                }
+            }
+        }
+        return "NO";
     }
 
     private static final Scanner scanner = new Scanner(System.in);
