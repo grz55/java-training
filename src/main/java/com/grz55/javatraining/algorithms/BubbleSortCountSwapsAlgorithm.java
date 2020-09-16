@@ -4,7 +4,8 @@ import java.util.*;
 
 public class BubbleSortCountSwapsAlgorithm {
 
-    // Complete the countSwaps function below.
+    // HACKER RANK
+    // Function counts how many swaps were needed to bubble sort the given array
     static void countSwaps(int[] a) {
         int n = a.length;
         int swapsCount = 0;
