@@ -59,6 +59,10 @@ public class ReverseLinkedListAlgorithm {
      * }
      *
      */
+
+    // HACKER RANK
+    // Algorithm reverses doubly linked list
+
     static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
         System.out.println("Starting reverse function");
         DoublyLinkedListNode node = head;
