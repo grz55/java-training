@@ -62,9 +62,13 @@ public class ReverseLinkedListAlgorithm {
     static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
         System.out.println("Starting reverse function");
         DoublyLinkedListNode node = head;
+        DoublyLinkedListNode temp;
         while (node != null) {
-            System.out.println(node.data);
-            node = node.next;
+            temp = node.next;
+            node.next = node.prev;
+            node.prev = temp;
+            head = node;
+            node = temp;
         }
         return head;
     }
