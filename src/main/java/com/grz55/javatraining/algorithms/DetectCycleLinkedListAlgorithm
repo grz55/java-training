@@ -1,0 +1,25 @@
+/*
+Detect a cycle in a linked list. Note that the head pointer may be 'null' if the list is empty.
+
+A Node is defined as:
+    class Node {
+        int data;
+        Node next;
+    }
+*/
+
+// HACKER RANK
+// Algorithm detects a cycle in a linked list
+
+boolean hasCycle(Node head) {
+    Set<Node> nodes = new HashSet<>();
+
+    while(head != null){
+        if(nodes.contains(head)){
+            return true;
+        }
+        nodes.add(head);
+        head = head.next;
+    }
+    return false;
+}
