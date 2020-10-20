@@ -1,4 +1,4 @@
-package com.grz55.javatraining;
+package com.grz55.javatraining.algorithms.arrays;
 
 public class CountRectanglesComarchAlgorithm {
 
