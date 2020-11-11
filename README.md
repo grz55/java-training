@@ -8,3 +8,5 @@ Basics, OOP, Files, Collections
 
 Algorithms solved
 Examples from HackerRank and LeetCode
+
+Design patterns examples
